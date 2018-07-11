@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Source Sans Pro', sans-serif;
+   font-size: 18px;
+   line-height: 1.5;
+}
+
+h2 {
+   font-weight: 600;
+   font-size: 42px;
+   margin-bottom: 40px;
+}
+
+/*------------------------- Testimonials (customers) ---------------------------*/
+
+.testimonials {
+   text-align: center;
+   padding: 50px;
+   height: 100%;
+}
+
+.cards {
+   position: relative;
+   max-width: 760px;
+   height: 400px;
+   margin: 0 auto;
+}
+
+.card {
+   display: none;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 760px;
+   height: 100%;
+   background: #fff;
+   margin: 0 auto;
+   padding: 40px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+
+.c-img {
+   display: inline-block;
+   width: 260px;
+   height: 100%;
+   background-position: center;
+   background-size: cover;
+   float: left;
+   margin-right: 40px;
+}
+
+.c-name {
+   float: left;
+   font-size: 28px;
+   margin-bottom: 15px;
+}
+
+.c-name:after {
+   display: block;
+   width: 100%;
+   height: 2px;
+   background-color: #62ccb5;
+   content: " ";
+}
+
+.c-comment {
+   float: left;
+   text-align: left;
+   width: 380px;
+   line-height: 1.4;
+}
+
+/*------------------------- Bullets ---------------------------*/
+
+.slide-bullets {
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
+
+.s-bullet {
+   display: inline-block;
+   width: 8px;
+   height: 8px;
+   margin: 5px;
+   border-radius: 50%;
+   background: #bfbfbf;
+   transition: all 0.2s;
+   cursor: pointer;
+}
+
+.s-bullet:hover {
+   background: #5b5b5b;
+}
+
+.b-active {
+   background: #333;
+}
+
+/*------------------------- Arrows ---------------------------*/
+
+.arrow-block {
+   position: absolute;
+   width: 70px;
+   height: 70px;
+   background: #fff;
+   top: 50%;
+   transform: translate(0, -50%);
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+   cursor: pointer;
+}
+
+.arrow-prev {
+   left: -70px;
+}
+.arrow-next {
+   right: -70px;
+}
+
+.arrow {
+   position: absolute;
+   top: 0; bottom: 0; left: 0; right: 0;
+   display: inline-block;
+   width: 30px;
+   height: 30px;
+   border-bottom: 3px solid #62ccb5;
+   border-left: 3px solid #62ccb5;
+   margin: auto;
+   transition: all 0.2s;
+}
+.arrow-block:hover .arrow {
+   border-bottom: 3px solid #333;
+   border-left: 3px solid #333;
+}
+
+.arrow-left {
+   transform: rotate(45deg) translate(15%, -15%);
+}
+.arrow-right {
+   transform: rotate(-135deg) translate(15%, -15%);
+}
